@@ -30,4 +30,15 @@ RSpec.describe User do
             expect(@user1.bmi).to eq(nil)
         end
     end
+
+    describe '#calculate_bmi()' do
+        it 'updates bmi value with caculated value' do
+            @user1.calculate_bmi
+            
+            expect(@user1.bmi).to eq(25.8)
+        end
+        it 'returns a message according to what bmi category applies' do
+            expect(@user1.calculate_bmi).to eq('You are Overweight')
+        end
+    end
 end
