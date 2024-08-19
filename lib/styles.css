@@ -1,1 +1,30 @@
-asdasdfaa
+* {
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+}
+header {
+    background-color: rgb(130, 28, 148);
+    color: aliceblue;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-items {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    color:aliceblue;
+} 
+
+.nav-items li a {
+    color: aliceblue
+}
+
+.splash {
+    text-align: center;
+    background-image: url(/gymCrush-Assets/gym-background.avif);
+    background-size: cover;
+    padding: 50px 20px;
+    
+}
